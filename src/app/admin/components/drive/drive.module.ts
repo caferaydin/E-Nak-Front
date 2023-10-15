@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DriveComponent } from './drive.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -9,7 +10,10 @@ import { DriveComponent } from './drive.component';
     DriveComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild([
+      {path : "" , component : DriveComponent},
+    ])
   ]
 })
 export class DriveModule { }

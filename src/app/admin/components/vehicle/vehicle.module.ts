@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { VehicleComponent } from './vehicle.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -9,7 +10,11 @@ import { VehicleComponent } from './vehicle.component';
     VehicleComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild([
+      {path: "" , component:VehicleComponent},
+
+    ])
   ]
 })
 export class VehicleModule { }
