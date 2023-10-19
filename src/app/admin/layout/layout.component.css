@@ -1,0 +1,10 @@
+.admin-dashboard {
+   width: 99%;
+   height: 600px;
+   margin: 10px 10px 10px;
+   border: 1px solid #555;
+  }
+
+  .admin-sideNav{
+   width: 200px;
+  }

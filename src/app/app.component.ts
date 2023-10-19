@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+declare var  $: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,3 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'E-Nak-Front';
 }
+
+// $(document).ready(()=> {
+//   alert("ready")
+// });
+
+
